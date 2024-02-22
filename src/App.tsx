@@ -1,5 +1,6 @@
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
+import Test from "./components/Test";
 import "./App.css";
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
 
   return (
     <>
+      <Test />
       <div>
         <a href="https://react.dev" target="_blank">
           <img src={reactLogo} className="logo react" alt="React logo" />
