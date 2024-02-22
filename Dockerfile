@@ -1,8 +1,7 @@
 # Build the client
 FROM node:20.11.1-alpine3.18 AS build
 
-COPY package.json index.html ./
-COPY ./src /src
+COPY . ./
 RUN yarn
 RUN yarn build
 
