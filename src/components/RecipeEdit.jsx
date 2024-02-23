@@ -26,7 +26,8 @@ const RecipeEdit = ({ recipe, onSubmit }) => {
         onChange={handleChange}
       />
       <button className={styles.saveButton}>
-        <TfiSave className={styles.saveIcon} />
+        {/* <TfiSave className={styles.saveIcon} /> */}
+        Save
       </button>
     </form>
   );

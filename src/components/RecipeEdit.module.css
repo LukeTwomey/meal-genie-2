@@ -9,10 +9,16 @@
 }
 
 .saveButton {
-  background: none;
+  margin-left: 0.5em;
+  color: white;
+  background: #1a1a90;
   border: none;
-  width: 30px;
-  height: 30px;
+  border-radius: 5px;
+  padding: 0.25em 0.75em;
+  /* background: grey; */
+  /* border: none; */
+  /* width: 30px; */
+  /* height: 30px; */
 }
 
 .saveIcon {
