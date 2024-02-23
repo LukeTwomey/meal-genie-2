@@ -1,0 +1,8 @@
+.addRecipeButton {
+  margin-left: 0.5em;
+  color: white;
+  background: #1a1a90;
+  border: none;
+  border-radius: 5px;
+  padding: 0.25em 0.75em;
+}

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useAddRecipeMutation } from "../store";
+import styles from "./AddRecipe.module.css";
 
 const AddRecipe = () => {
   const [addRecipe, results] = useAddRecipeMutation();
@@ -19,7 +20,7 @@ const AddRecipe = () => {
     <>
       <form onSubmit={handleSubmit}>
         <input value={recipeName} onChange={handleChange} />
-        <button>Add Recipe</button>
+        <button className={styles.addRecipeButton}>Add Recipe</button>
       </form>
     </>
   );
