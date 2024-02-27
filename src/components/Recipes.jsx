@@ -9,7 +9,7 @@ const Recipes = () => {
   if (isFetching) {
     content = <LoadingIcon />;
   } else if (error) {
-    console.log("error"); // output error to user
+    content = <p>Error loading recipes. Please refresh to try again.</p>;
   } else {
     content = data.map((recipe) => {
       return <Recipe recipe={recipe} key={recipe.id} />;
