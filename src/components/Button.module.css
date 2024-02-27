@@ -1,0 +1,73 @@
+.margin {
+  margin: 0 0 1em 0.5em;
+}
+
+.padding {
+  padding: 0.25em 0.75em;
+}
+
+.border {
+  border: none;
+}
+
+.primary {
+  background: #1a1a90;
+  border: 1px solid #1a1a90;
+  color: white;
+}
+
+.secondary {
+  background: #550061;
+  border: 1px solid #550061;
+  color: white;
+}
+
+.success {
+  background: #005c19;
+  border: 1px solid #005c19;
+  color: white;
+}
+
+.warning {
+  background: #a14c02;
+  border: 1px solid #a14c02;
+  color: white;
+}
+
+.danger {
+  background: #a10202;
+  border: 1px solid #a10202;
+  color: white;
+}
+
+.outlinePrimary {
+  color: #1a1a90;
+}
+
+.outlineSecondary {
+  color: #550061;
+}
+
+.outlineSuccess {
+  color: #005c19;
+}
+
+.outlineWarning {
+  color: #a14c02;
+}
+
+.outlineDanger {
+  color: #a10202;
+}
+
+.loading {
+  opacity: 0.5;
+}
+
+.rounded {
+  border-radius: 5px;
+}
+
+.outline {
+  background: white;
+}

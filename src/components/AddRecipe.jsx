@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useAddRecipeMutation } from "../store";
-import styles from "./AddRecipe.module.css";
+import Button from "./Button";
 
 const AddRecipe = () => {
   const [addRecipe, results] = useAddRecipeMutation();
@@ -20,7 +20,14 @@ const AddRecipe = () => {
     <>
       <form onSubmit={handleSubmit}>
         <input value={recipeName} onChange={handleChange} />
-        <button className={styles.addRecipeButton}>Add Recipe</button>
+        <Button
+          loading={results.isLoading}
+          rounded
+          primary
+          onClick={handleSubmit}
+        >
+          + Add Recipe
+        </Button>
       </form>
     </>
   );
