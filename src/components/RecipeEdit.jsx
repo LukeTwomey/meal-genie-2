@@ -1,4 +1,6 @@
 import { useState } from "react";
+import Button from "./Button";
+import LoadingIcon from "./LoadingIcon";
 import { useEditRecipeMutation } from "../store";
 import { TfiSave } from "react-icons/tfi";
 import styles from "./RecipeEdit.module.css";
@@ -13,10 +15,15 @@ const RecipeEdit = ({ recipe, onSubmit }) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-
-    onSubmit();
     editRecipe({ id: recipe.id, name });
+    onSubmit();
   };
+
+  const saveIcon = results.isLoading ? (
+    <LoadingIcon />
+  ) : (
+    <TfiSave className={styles.saveIcon} />
+  );
 
   return (
     <form className={styles.form} onSubmit={handleSubmit}>
@@ -25,10 +32,14 @@ const RecipeEdit = ({ recipe, onSubmit }) => {
         value={name}
         onChange={handleChange}
       />
-      <button className={styles.saveButton}>
-        {/* <TfiSave className={styles.saveIcon} /> */}
-        Save
-      </button>
+      <Button
+        loading={results.isLoading}
+        rounded
+        primary
+        className={styles.saveButton}
+      >
+        {saveIcon}
+      </Button>
     </form>
   );
 };
