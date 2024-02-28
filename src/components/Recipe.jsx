@@ -1,8 +1,7 @@
 import { useState } from "react";
+import RecipeButtons from "./RecipeButtons";
 import RecipeEdit from "./RecipeEdit";
 import { useDeleteRecipeMutation } from "../store";
-import { ImBin } from "react-icons/im";
-import { FaRegEdit } from "react-icons/fa";
 import styles from "./Recipe.module.css";
 
 const Recipe = ({ recipe }) => {
@@ -29,8 +28,12 @@ const Recipe = ({ recipe }) => {
   return (
     <>
       <div className={styles.recipe}>
-        <ImBin className={styles.deleteIcon} onClick={handleDeleteClick} />{" "}
-        <FaRegEdit className={styles.editIcon} onClick={handleEditClick} />
+        <RecipeButtons
+          results={results}
+          showEdit={showEdit}
+          handleEditClick={handleEditClick}
+          handleDeleteClick={handleDeleteClick}
+        />
         {content}
       </div>
     </>

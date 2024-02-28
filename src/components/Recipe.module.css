@@ -3,19 +3,3 @@
   align-items: center;
   margin: 1em 0;
 }
-
-.deleteIcon {
-  color: red;
-  cursor: pointer;
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
-}
-
-.editIcon {
-  color: #804c00;
-  cursor: pointer;
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
-}
